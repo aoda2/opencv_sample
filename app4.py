@@ -19,8 +19,8 @@ while True:
     # BGRのチャンネル並びをRGBの並びに変更(matplotlibで結果を表示するため)
     rgb_image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) 
     # 色相の範囲を指定
-    lower_hue = 16  # 下限
-    upper_hue = 20  # 上限
+    lower_hue = 17  # 下限
+    upper_hue = 18  # 上限
     # 色相に基づいて閾値処理を行う
     mask = cv2.inRange(hsv_image, (lower_hue, 50, 50), (upper_hue, 255, 255))
     # 元画像とマスクを結合して結果を得る
